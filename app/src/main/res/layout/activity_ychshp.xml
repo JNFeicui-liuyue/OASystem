@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hasee.oasystem.QjshpActivity">
+
+    <!-- 放头部 -->
+    <RelativeLayout
+        android:id="@+id/qjsp_header_rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/oa_top"
+        >
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/search_button"
+            android:src="@drawable/oa_back"
+            android:layout_alignParentTop="true"/>
+        <ImageView
+            android:id="@+id/qjsp_header_center_imgview1"
+            android:layout_width="163dp"
+            android:layout_height="40dp"
+            android:background="@drawable/top_logo"
+            android:layout_centerInParent="true"
+            />
+        <!--<Button-->
+        <!--android:id="@+id/qjsp_add1"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="34dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:text="添加"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="18sp"-->
+        <!--android:background="@drawable/search_bg"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--/>-->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/qjsp_listtitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:layout_below="@+id/qjsp_header_rl1"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        >
+        <TextView
+            android:id="@+id/qjsp_list_name1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="名称"
+            android:layout_toLeftOf="@+id/qjsp_list_date1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            />
+        <TextView
+            android:id="@+id/qjsp_list_date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="状态"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/qjsp_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qjsp_listtitle1"
+        android:background="@drawable/list_divider"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:visibility="gone"
+        />
+    <ListView
+        android:id="@+id/qjsp_listview1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5sp"
+        android:listSelector="#00000000"
+        android:background="@drawable/doc_search_bj"
+        android:layout_below="@id/qjsp_line1"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:focusable="true"
+        android:divider="@drawable/list_divider"
+        android:cacheColorHint="#00000000"
+        >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/app_list_progressBar1"
+        style="@style/myProgressBarStyle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/approlist_toast1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无数据"
+        android:textSize="19sp"
+        android:textColor="@color/dark_gray"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>
+
+
+
+

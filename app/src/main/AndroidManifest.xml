@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.hasee.oasystem">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,11 +11,35 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".QjshpActivity">
+        </activity>
+        <activity android:name=".JbshpActivity">
+        </activity>
+        <activity android:name=".YchshpActivity">
+        </activity>
+        <activity android:name=".ShqglActivity">
+        </activity>
+        <activity android:name=".TzhggActivity">
+        </activity>
+        <activity android:name=".HyshqActivity">
+        </activity>
+        <activity android:name=".BxshqActivity">
+        </activity>
+        <activity android:name=".YchshqActivity">
+        </activity>
+        <activity android:name=".JbshqActivity">
+        </activity>
+        <activity android:name=".JkshqActivity">
+        </activity>
+        <activity android:name=".QjshqActivity">
         </activity>
     </application>
 

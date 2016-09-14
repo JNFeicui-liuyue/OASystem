@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<group
+    android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/zhuxiao"
+        android:checked="true"
+        android:icon="@drawable/zhuxiao"
+        android:title="@string/zhuxiao"/>
+
+    <item
+        android:id="@+id/tuichu"
+        android:icon="@drawable/tuichu"
+        android:title="@string/tuichu"/>
+
+</group>
+</menu>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">OASystem</string>
+    <string name="zhuxiao">注销登录</string>
+    <string name="tuichu">退出程序</string>
+    <string name="login_text_usn">账 号</string>
+    <string name="login_text_pwd">密 码</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
